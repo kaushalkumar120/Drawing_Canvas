@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Drawing Canvas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">🎨 Drawing Canvas</h1>
+
+<div class="toolbar">
+    <input type="color" id="colorPicker" value="#000000">
+
+    <input type="range" id="brushSize" min="1" max="50" value="10">
+    <span id="sizeValue">10px</span>
+
+    <button id="eraserBtn">🧽 Eraser</button>
+    <button id="clearBtn">🗑️ Clear</button>
+    <button id="saveBtn">💾 Save</button>
+</div>
+
+<div class="canvas-container">
+    <canvas id="canvas"></canvas>
+    <div class="tool-indicator" id="indicator">✏️ Brush | 10px</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
